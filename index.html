@@ -626,7 +626,8 @@
 
   /* Projects */
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* 🔥 shrink card width */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* ✅ fix */
     gap: 20px;
   }
 }
@@ -668,7 +669,7 @@
 
   /* Projects */
   .projects-grid {
-    grid-template-columns: 1fr 1fr; /* 🔥 2 cards per row */
+    grid-template-columns: 1fr; /* ✅ force single column */
     gap: 20px;
   }
 }
@@ -691,7 +692,7 @@
 
   /* Projects */
   .projects-grid {
-    grid-template-columns: 1fr; /* 🔥 1 card per row (full width) */
+    grid-template-columns: 1fr; /* ✅ full width on mobile */
     gap: 15px;
   }
 
@@ -711,7 +712,7 @@
     font-size: 0.9rem;
   }
 }
-
+    
   </style>
 </head>
 
@@ -1126,5 +1127,6 @@
 
 
 </html>
+
 
 
